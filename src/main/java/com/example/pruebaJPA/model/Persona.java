@@ -3,10 +3,7 @@ package com.example.pruebaJPA.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -18,6 +15,8 @@ public class Persona {
     private String nombre;
     private String apellido;
     private int edad;
+    @OneToOne
+    private Mascota unaMascota;
 
     public Persona() {
     }
