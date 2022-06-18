@@ -45,4 +45,10 @@ public class PersonaService implements IPersonaService {
         perso.setEdad(nuevaEdad);
         this.persoRepo.save(perso);
     }
+
+    @Override
+    public void editPersona(Persona perso) {
+
+        this.savePersona(perso);
+    }
 }

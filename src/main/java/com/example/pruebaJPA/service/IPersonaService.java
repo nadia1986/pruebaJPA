@@ -10,4 +10,6 @@ public interface IPersonaService {
     public void deletePersona(Long id);
     public Persona findPersona(Long id);
     void editPersona(Long idOriginal, Long idNuevo,String nuevoNombre, String nuevoApellido, int nuevaEdad);
+
+    void editPersona(Persona perso);
 }
